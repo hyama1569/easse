@@ -137,6 +137,8 @@ def syntactic_parse_texts(
         annotators=corenlp_annotators,
         properties=annotators_properties,
         threads=40,
+        endpoint='http://localhost:9001',
+        be_quiet=True
     ) as client:
         for text in tqdm(texts, disable=(not verbose)):
             if isinstance(text, List):
