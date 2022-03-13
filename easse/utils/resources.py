@@ -53,7 +53,7 @@ def untar(compressed_path, output_dir):
 
 
 def download_stanford_corenlp():
-    url = 'https://huggingface.co/stanfordnlp/CoreNLP/resolve/main/stanford-corenlp-latest.zip'
+    url = 'https://nlp.stanford.edu/software/stanford-corenlp-4.4.0.zip'
     temp_filepath = get_temp_filepath()
     download(url, temp_filepath)
     STANFORD_CORENLP_DIR.mkdir(parents=True, exist_ok=True)
