@@ -1,7 +1,7 @@
 from typing import List
 import os
 
-from stanfordnlp.server import CoreNLPClient
+from stanza.server import CoreNLPClient
 from tqdm import tqdm
 
 from easse.utils.resources import download_stanford_corenlp
